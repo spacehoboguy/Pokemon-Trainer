@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  color: rgb(47, 47, 47);
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 232, 231);
+}
+
+#app {
+  width: 600px;
+  height: 500px;
+  background-color: rgb(212, 212, 212);
+  border: 5px solid black;
+}
+
+#gameWindow {
+  display: flex;
+  height: 80%;
+  width: 100%;
+  flex-direction: column;
+}
+
+
+#enemyEncounter {
+  display: flex;
+  gap: 1em;
+}
+
+#enemyStats {
+  display: flex;
+  margin-left: 5%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /* padding-top: 60px;
+    padding-left: 10px; */
+}
+
+#enemyImg {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-left: 30%;
+  contain: content;
+}
+
+#localEncounter {
+  display: flex;
+  gap: 1em;
+  /* justify-content: flex-end; */
+}
+
+#localStats {
+  display: flex;
+  margin-left: 30%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#localImg {
+  display: flex;
+  justify-content: flex-start;
+  width: 200px;
+  height: 200px;
+  margin-left: 5%;
+  contain: content;
+
+  
+}
+
+.action-btn {
+  height: 50px;
+  background-color: aliceblue;
+  color: black;
+  border: 2px solid black;
+}
+
+.action-btn:hover {
+  background-color: rgb(200, 201, 202);
+  cursor: pointer;
+}
+
+#actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#logWindow {
+  position: absolute;
+  transform: translate(600px, -497px);
+  background-color: white;
+  width: 300px;
+  height: 500px;
+  border: 5px solid black;
+  font-size: 0.7rem;
+  padding-left: 5px;
+  list-style-type: none;
+  overflow-y: scroll;
+}
+
+#logWindow li {
+  padding-top: 15px;
+}
+
+
+#inventory {
+  height: 95%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-y: scroll;
+  gap: 5px;
+}
+.inv-element{
+  height: 200px;
+  background-color: rgb(188, 188, 188);
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 2px solid rgb(95, 95, 95);
+  cursor: pointer;
+}
+.inv-element:hover {
+  background-color: rgb(211, 211, 211);
+}
+
+#inventory button {
+  
+  width: 100%;
+}
+
+.inv-element-disabled{
+  filter: saturate(0%);
+
+}
+
+.inv-element-disabled:hover {
+  filter: saturate(0%);
+  background-color: rgb(100, 100, 100)
+  
+}

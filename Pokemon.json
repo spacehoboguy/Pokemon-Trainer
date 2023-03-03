@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Bulbasaur",
+        "level": 5,
+        "type": "Grass",
+        "favorite food": ""
+    },
+    {
+        "name": "Squirtle",
+        "level": 6,
+        "type": "Water",
+        "favorite food": ""
+    },
+    {
+        "name": "Charmander",
+        "level": 7,
+        "type": "Fire",
+        "favorite food": ""
+    }
+
+
+    
+]
