@@ -53,7 +53,9 @@ let pokemons = [
       },
     ],
   },
-  {
+  
+      
+      {
     name: "Charmander",
     level: 7,
     type: "Fire",
@@ -274,7 +276,7 @@ let ownedPokemon = [
   },
 ];
 
-function walkInGrass() {}
+function walkInGrass() { }
 let activeEncounter;
 let activeLocal = "";
 
